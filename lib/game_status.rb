@@ -15,3 +15,10 @@ WIN_COMBINATIONS = [
   [6, 4, 2]
 ]
 
+def over?(board)
+  if won?(board) || full?(board) || draw?(board)
+    return true
+  else
+    return false
+  end
+end
